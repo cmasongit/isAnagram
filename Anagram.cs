@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Linq;
-using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 
-internal class Program
+internal class Anagram
 {
 
     //Chenell Mason
@@ -15,7 +14,7 @@ internal class Program
 
     //NOTICE ABOUT INPUT.TXT SET LOCATION:
     //The input file location is set to @C:\\input.txt
-    //The output file is written to the NET 6.0 folder: It should also automatically pop up after the program is ran.
+    //The output file is written to location Program\bin\debug\Net6.0 in the attach zip file: It should also automatically pop up after the program is ran.
 
 
 
@@ -254,6 +253,9 @@ internal class Program
      
 
         String inputfilename ="c:\\input.txt";
+      
+
+
         List<String> inputread = splitter(filereader(inputfilename));
         isAnagramOutput(anagramresult(inputread));
 
